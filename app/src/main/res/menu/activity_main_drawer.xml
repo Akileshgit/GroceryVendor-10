@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_nav_profile"
+            android:textSize="@dimen/text_size_x_large"
+
+
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_support"
+            android:textSize="@dimen/text_size_x_large"
+
+            android:icon="@drawable/ic_nav_support"
+            android:title="@string/nav_chat" />
+
+        <item
+            android:id="@+id/nav_policy"
+            android:textSize="@dimen/text_size_x_large"
+
+            android:icon="@drawable/ic_nav_policy"
+            android:title="@string/nav_terms" />
+
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:textSize="@dimen/text_size_x_large"
+
+            android:icon="@drawable/ic_exit"
+            android:title="@string/nav_logout" />
+
+       <!-- <item
+            android:id="@+id/nav_powerd"
+            android:icon="@drawable/copy"
+            android:textSize="@dimen/text_size_x_large"
+
+            android:title="@string/status_stop" />-->
+
+    </group>
+</menu>

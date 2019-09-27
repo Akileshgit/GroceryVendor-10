@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        app:cardElevation="@dimen/space_5"
+
+        card_view:cardCornerRadius="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="@dimen/space_4">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_subcat_img"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="157dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/iv_subcat_img"
+                app:layout_constraintRight_toLeftOf="@+id/iv_subcat_minus"
+                app:layout_constraintTop_toTopOf="@+id/iv_subcat_img">
+
+                <Fonts.LatoBLack
+                    android:id="@+id/tv_subcat_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Jessyka swan"
+                    android:textStyle="bold"
+                    android:textColor="#357705"
+                    android:textSize="21dp"  />
+
+                <Fonts.LatoBLack
+                    android:id="@+id/tv_subcat_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_X_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="@dimen/space_3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Fonts.LatoBLack
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_cart_total"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <Fonts.LatoBLack
+                        android:id="@+id/tv_subcat_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" TextView"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <Fonts.LatoBLack
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="@string/currency"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_subcat_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_plus" />
+
+            <TextView
+                android:id="@+id/tv_subcat_contetiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginEnd="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="0"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_subcat_plus"
+                app:layout_constraintRight_toLeftOf="@+id/iv_subcat_plus"
+                app:layout_constraintTop_toTopOf="@+id/iv_subcat_plus" />
+
+            <ImageView
+                android:id="@+id/iv_subcat_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/space_8"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_subcat_plus"
+                app:layout_constraintRight_toLeftOf="@+id/tv_subcat_contetiy"
+                app:srcCompat="@drawable/ic_minus" />
+
+            <Fonts.LatoBLack
+                android:id="@+id/tv_subcat_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/space_10"
+                android:text="@string/tv_pro_add"
+                android:textColor="#017F01"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_subcat_minus"
+                app:layout_constraintRight_toRightOf="@+id/iv_subcat_plus"
+                app:layout_constraintTop_toBottomOf="@+id/iv_subcat_plus"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_subcat_remove"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_view"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_height="0.5dp"/>
+
+</RelativeLayout>
+

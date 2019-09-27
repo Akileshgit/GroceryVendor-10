@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#0A0A0A</color>
+    <color name="colorAccent">#090808</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#F7F4F4</color>
+    <color name="black">#000000</color>
+    <color name="dark_black">#000000</color>
+    <color name="dark_gray">#A8A3A3</color>
+    <color name="color_1">#1bdc84</color>
+    <color name="color_2">#1b4ddc</color>
+    <color name="color_3">#ff0023</color>
+    <color name="orange">#ffbb00</color>
+    <color name="yelow">#ffee05</color>
+    <color name="purple">#ed0bc0</color>
+    <color name="greenn">#8BC34A</color>
+    <color name="green">#EDF0EE</color>
+    <color name="light_gray">#faf5f5</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#978E8E</color>
+    <color name="your_color">#0A0A0A</color>
+    <color name="sabzi_shoppee_green">#357705</color>
+    <color name="pdlg_color_white">#eeeeee</color>
+
+</resources>

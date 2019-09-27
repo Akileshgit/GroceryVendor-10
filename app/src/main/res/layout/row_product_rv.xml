@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_button"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_4">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_subcat_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="157dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/iv_subcat_img"
+            app:layout_constraintRight_toLeftOf="@+id/add_sub_layout"
+            app:layout_constraintTop_toTopOf="@+id/iv_subcat_img">
+
+            <Fonts.LatoBLack
+                android:id="@+id/tv_subcat_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Jessyka swan"
+                android:textStyle="bold"
+                android:textColor="#357705"
+                android:textSize="21dp"  />
+
+            <Fonts.LatoBLack
+                android:id="@+id/tv_subcat_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_X_small" />
+            <Fonts.LatoBLack
+                android:id="@+id/tv_subcat_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_X_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="@dimen/space_3"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Fonts.LatoBLack
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_cart_total"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Fonts.LatoBLack
+                    android:id="@+id/tv_subcat_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" TextView"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Fonts.LatoBLack
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/currency"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_sub_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_subcat_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/tv_subcat_contetiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_toRightOf="@+id/iv_subcat_minus"
+                android:text="0"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:id="@+id/iv_subcat_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_subcat_contetiy"
+                app:srcCompat="@drawable/ic_plus" />
+
+        </RelativeLayout>
+
+
+
+        <Fonts.LatoBLack
+            android:id="@+id/tv_subcat_add"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:text="@string/tv_pro_add"
+            android:textColor="#017F01"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_subcat_remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
